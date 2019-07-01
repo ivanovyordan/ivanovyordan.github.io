@@ -1,6 +1,7 @@
 # Site
 title: 'Yordan Ivanov'
 description: 'My personal blog'
+logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 baseurl: ''
 disqus: 'ivanovyordan'
@@ -28,6 +29,10 @@ author:
     twitter: ivanov_yordan
     github: ivanovyordan
     linkedin: ivanovyordan
+
+twitter:
+  username: ivanovyordan
+  card: summary
 
 # Defaults
 defaults:
