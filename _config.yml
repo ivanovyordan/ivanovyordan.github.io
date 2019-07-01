@@ -1,7 +1,6 @@
 # Site
 title: 'Yordan Ivanov'
 description: 'My personal blog'
-logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
 baseurl: ''
 disqus: 'ivanovyordan'
@@ -37,8 +36,6 @@ defaults:
       path: '_posts'
     values:
       layout: post
-      author: sal
-      avatar: /assets/images/avatar1.jpg
 
   # all pages
   - scope:
