@@ -1,0 +1,19 @@
+<div class="gallery">
+  {% for image in include.gallery.images %}
+    {% assign size = include.gallery.images | size %}
+    {% assign mod_6 = forloop.index | modulo: 6 %}
+    {% assign mod_6_plus_1 = forloop.index | plus: 1 | modulo: 6 %}
+    {% assign mod_3 = forloop.index | modulo: 3 %}
+    {% assign mod_3_minus_1 = forloop.index | minus: 1 | modulo: 3 %}
+
+    {% if mod_6 == 0 or mod_3_minus_1 == 0 %}<div class="row">{% endif %}
+    <div class="col p-2">
+      <div class="card h-100">
+        <img src="{{ image.src }}" class="card-img-top">
+      </div>
+    </div>
+    {% if mod_3 == 0 or mod_6_plus_1 == 0 or forloop.index == size %}</div>{% endif %}
+  {% endfor %}
+
+  <em>{{ include.gallery.description }}</em>
+</div>

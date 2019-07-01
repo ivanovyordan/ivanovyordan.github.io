@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head/main.html %}
+  </head>
+
+  <body class="d-flex flex-column h-100 {% if page.path contains '_posts' %}post{% else %}page{% endif %} {% if page.url == '/' %}home{% elsif page.slug %}{{ page.slug }}{% else %}{{ page.url | remove: '/' }}{% endif %}">
+    <header>
+      {% include header/main.html %}
+    </header>
+
+    <main role="main">
+      {{ content }}
+    </main>
+
+    <footer class="bg-white border-top p-3 text-muted small">
+      {% include footer/main.html %}
+    </footer>
+
+    <script src="{{ '/assets/js/index.js' | prepend: site.baseurl }}" charset="utf-8"></script>
+  </body>
+</html>

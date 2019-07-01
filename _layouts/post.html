@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<div class="container pt-4 pb-4">
+  {% include post/jumbotron.html page = page %}
+
+  <div class="row">
+    <div class="col-md-2">
+      {% include post/share.html %}
+    </div>
+
+    <div class="col-md-9">
+      <article class="article-post">
+        {{ content }}
+      </article>
+
+      <div class="mb-4">
+        <span class="taglist">
+          {% for tag in page.tags %}
+          <a class="sscroll btn btn-light btn-sm font-weight-bold" href="{% link _pages/tags.html %}#{{ tag | downcase }}">{{ tag | downcase }}</a>
+          {% endfor %}
+        </span>
+      </div>
+
+      {% include post/subscribe.html %}
+
+      {% if page.comments != false %}
+        {% include post/comments.html %}
+      {% endif %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+---
+title: Home
+layout: default
+pagination:
+  enabled: true
+description: My personal blog homepage
+---
+<div class="container">
+  {% if page.url == '/' %}
+    <div class="row mb-4">
+      {% include index/featured-posts.html %}
+    </div>
+  {% endif %}
+
+  <div class="row">
+    <section>
+      <h2><span>All stories</span></h2>
+
+      <div class="row">
+        {% for post in paginator.posts %}
+          {% include index/post.html post=post %}
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+</div>
+
+{% include index/pagination.html %}

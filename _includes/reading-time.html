@@ -1,0 +1,8 @@
+<div class="reading-time">
+  <small class="text-muted">{{ post.date | date: '%b %d, %Y' }}</small>
+  &middot;
+  <small class="text-muted">
+    {% assign words = post.content | number_of_words %}
+    {% if words < 360 %}1 min read{% else %}{{ words | divided_by:180 }} mins read{% endif %}
+  </small>
+</div>
