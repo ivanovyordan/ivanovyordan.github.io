@@ -6,9 +6,9 @@ favicon: 'assets/images/favicon.ico'
 baseurl: ''
 disqus: 'ivanovyordan'
 email: 'mail@ivanovyordan.com'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+mailchimp-list: 'https://ivanovyordan.us20.list-manage.com/subscribe/post?u=e0b56c32fb49aebd4080fb753&amp;id=e5c9c71c74'
 
-url: https://wwww.ivanovyordan.com/
+url: https://wwww.ivanovyordan.com
 
 include: ['_pages']
 permalink: /:year/:month/:day/:title/
