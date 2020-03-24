@@ -10,7 +10,7 @@ mailchimp-list: 'https://ivanovyordan.us20.list-manage.com/subscribe/post?u=e0b5
 
 url: https://wwww.ivanovyordan.com
 
-include: ['_pages']
+include: ['_pages', '.well-known']
 permalink: /:year/:month/:day/:title/
 
 # Plugins

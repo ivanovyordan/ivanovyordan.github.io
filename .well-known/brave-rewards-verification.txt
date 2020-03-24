@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: ivanovyordan.com
+Token: 147814586be4ad35f3c264b77275d07d17b3c17186f54b8b00a744031b3c16e7
