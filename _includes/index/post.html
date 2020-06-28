@@ -1,11 +1,11 @@
 <div class="col-lg-4 col-md-6 mb-4">
   <div class="card h-100">
-    <a href="{{ site.baseurl }}{{ post.url }}">
+    <a href="{{ post.url | absolute_url }}">
       <img src="{% include functions/image.html src=post.image %}" class="card-img-top" alt="{{ post.title }}">
     </a>
     <div class="card-body">
       <h3 class="card-title h5">
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
       </h3>
       {% include reading-time.html post=post %}
 

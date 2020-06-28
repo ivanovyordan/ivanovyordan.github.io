@@ -9,7 +9,7 @@
     {% if mod_6 == 0 or mod_3_minus_1 == 0 %}<div class="row">{% endif %}
     <div class="col p-2">
       <div class="card h-100">
-        <img src="{{ image.src }}" class="card-img-top">
+        <img src="{{ image.src | absolute_url }}" class="card-img-top">
       </div>
     </div>
     {% if mod_3 == 0 or mod_6_plus_1 == 0 or forloop.index == size %}</div>{% endif %}

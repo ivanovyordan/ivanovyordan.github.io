@@ -11,7 +11,7 @@ lang: en-US
 
       {% for post in pages_list %}
         <h3 class="h5">
-          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
         </h3>
       {% endfor %}
   </section>

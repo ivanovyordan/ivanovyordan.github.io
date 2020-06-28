@@ -20,7 +20,7 @@ Advertising partners and other third parties may use cookies, scripts and/or web
 
 
 #### Links to Third Party Websites
-We have included links on this website for your use and reference. We are not responsible for the privacy policies on these websites. You should be aware that the privacy policies of these websites may differ from our own.
+I have included links on this website for your use and reference. I am not responsible for the privacy policies on these websites. You should be aware that the privacy policies of these websites may differ from our own.
 
 
 #### Security
@@ -29,9 +29,8 @@ The security of your personal information is important to us, but remember that 
 
 #### Changes To This Privacy Policy
 This Privacy Policy is effective and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page.
-We reserve the right to update or change our Privacy Policy at any time and you should check this Privacy Policy periodically. If we make any material changes to this Privacy Policy, we will notify you either through the email address you have provided us, or by placing a prominent notice on our website.
+I reserve the right to update or change our Privacy Policy at any time and you should check this Privacy Policy periodically. If we make any material changes to this Privacy Policy, we will notify you either through the email address you have provided us, or by placing a prominent notice on our website.
 
 
 #### Contact Information
-For any questions or concerns regarding the privacy policy, please [contact me
-here]({% link _pages/contact.html %})
+For any questions or concerns regarding the privacy policy, please [contact me]({{ 'contact' | absolute_url }})

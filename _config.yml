@@ -1,14 +1,13 @@
 # Site
-title: 'Yordan Ivanov'
-description: 'My personal blog'
-logo: 'assets/images/logo.png'
-favicon: 'assets/images/favicon.ico'
-baseurl: ''
-disqus: 'ivanovyordan'
-email: 'mail@ivanovyordan.com'
-mailchimp-list: 'https://ivanovyordan.us20.list-manage.com/subscribe/post?u=e0b56c32fb49aebd4080fb753&amp;id=e5c9c71c74'
-
-url: https://wwww.ivanovyordan.com
+title: Yordan Ivanov
+description: My personal blog
+logo: assets/images/logo.png
+favicon: assets/images/favicon.ico
+url: https://www.ivanovyordan.com
+baseurl:
+disqus: ivanovyordan
+email: mail@ivanovyordan.com
+mailchimp-list: https://ivanovyordan.us20.list-manage.com/subscribe/post?u=e0b56c32fb49aebd4080fb753&amp;id=e5c9c71c74
 
 include: ['_pages', '.well-known']
 permalink: /:year/:month/:day/:title/
@@ -38,13 +37,13 @@ twitter:
 defaults:
   # all posts
   - scope:
-      path: '_posts'
+      path: _posts
     values:
       layout: post
 
   # all pages
   - scope:
-      path: '_pages'
+      path: _pages
     values:
       layout: page
 

@@ -3,14 +3,16 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>{{ page.title }} | {{ site.title }}</title>
 
-{% feed_meta %}
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="{{ site.title }}">
+
+
 {% seo %}
 
-<link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/{{site.favicon}}">
+<link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | absolute_url }}">
 
 <!-- Font Awesome Icons -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-<link rel="stylesheet" href="{{'/assets/css/style.css' | prepend: site.baseurl}}">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | absolute_url }}">
 
 {% include head/tracking.html %}
