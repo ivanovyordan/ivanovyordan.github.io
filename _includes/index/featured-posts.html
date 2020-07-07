@@ -19,7 +19,7 @@
                 </h3>
                 {% include reading-time.html post=post %}
 
-                <p class="card-text">{% include functions/excerpt.html post=post %}</p>
+                <p class="card-text">{{ post.excerpt }}</p>
               </div>
             </div>
           </div>

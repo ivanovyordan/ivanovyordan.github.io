@@ -19,6 +19,10 @@ gallery:
     - src: /assets/images/posts/hacktoberfest-2018/6.jpg
     - src: /assets/images/posts/hacktoberfest-2018/7.jpg
 ---
+Here's how the first Hacktoberfest event in Bulgaria was organized.
+
+<!--more-->
+
 If you don't already know that, Hacktoberfest is a celebration of open-source organized by DigitalOcean, GitHub and Twilio this year. The rules are simple, the first 50 000 who open five pull requests to open-source projects in GitHub will get a cool free T-shirt from DigitalOcean and friends.
 
 In the spirit of supporting open-source, we (the guys from Tuxcon) organized a local meetup last Sunday. It's the time to thank Siteground for their help and support and for giving us their space in Plovdiv, Bulgaria.

@@ -9,12 +9,18 @@ tags:
   - snowflake
   - featured
 ---
+Redshift is awesome, but we needed to move forward. It was a huge challenge and here's how we
+managed to do it.
+
+<!--more-->
+
+## The backstory
+
 I joined Receipt Bank as a software developer about three years ago. My last onboarding task gave me
 a good overview on the data flow and I was offered to join the data engineering team shortly after I
 finished my onboarding. I haven't had prior experience in this area, but I was keen to learn more,
 so I happily accepted.
 
-<!--more-->
 
 ## Redshift
 

@@ -10,6 +10,11 @@ tags:
   - write-up
   - featured
 ---
+The older folks among you know that working with SVN is a huge pain. Let me tell you how I led the
+migration of a hundred project from SVN to Git.
+
+<!--more-->
+
 ## The backstory
 I left my previous job about two years ago. As a small team in a single room, we didn't have significant problems with
 the communication. Surprisingly the choice of tooling and the way we were using it caused us our biggest problems.

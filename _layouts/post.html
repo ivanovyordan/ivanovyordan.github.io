@@ -11,7 +11,7 @@ layout: default
 
     <div class="col-md-9">
       <article class="article-post">
-        {{ content }}
+        {{ page.content | remove: page.excerpt }}
       </article>
 
       <div class="mb-4">
