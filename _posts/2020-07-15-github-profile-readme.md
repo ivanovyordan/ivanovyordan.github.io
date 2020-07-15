@@ -49,7 +49,7 @@ My profile README is relatively simple. You can see how it looks like at the tim
 the top of the post or check it at [GitHub](https://github.com/ivanovyordan/).
 
 Of course, you may have better ideas like placing animated portraits, skill endorsements or even the
-tracks that you are listening in Spotify. You can find all this and even more in a GitHub
+tracks that you are listening in Spotify. You can find all this and even more in a [GitHub
 repository](https://github.com/abhisheknaiidu/awesome-github-profile-readme).
 
 I showed you mine, now it's your turn to show me yours.
