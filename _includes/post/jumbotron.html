@@ -20,9 +20,9 @@
             </div>
           {% endif %}
 
-          {% if page.image_source_name and photo.image_source_url %}
+          {% if page.image_source_name and page.image_source_url %}
             <div class="text-center font-weight-light font-italic credit">Photo from
-              <a href="{{ page.image_source_name }}">{{ page.image_source }}</a>
+              <a href="{{ page.image_source_url }}">{{ page.image_source_name }}</a>
             </div>
           {% endif %}
         </div>
