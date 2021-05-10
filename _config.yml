@@ -8,7 +8,7 @@ baseurl:
 disqus: ivanovyordan
 email: mail@ivanovyordan.com
 mailchimp_list: https://ivanovyordan.us20.list-manage.com/subscribe/post?u=e0b56c32fb49aebd4080fb753&amp;id=e5c9c71c74
-feedburner_url: https://feeds.feedburner.com/ivanovyordan
+followit_url: https://follow.it/ivanovyordan
 
 include: ['_pages', '.well-known']
 permalink: /:year/:month/:day/:title/
