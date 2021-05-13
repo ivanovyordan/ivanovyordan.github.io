@@ -19,6 +19,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-redirect-from
   - jemoji
 
 author:
