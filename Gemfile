@@ -1,5 +1,9 @@
-source "https://rubygems.org"
-ruby RUBY_VERSION
-
-gem 'github-pages', group: :jekyll_plugins
-gem 'jekyll-admin', group: :jekyll_plugins
+source 'https://rubygems.org'
+gem "bundler"
+gem "jekyll"
+gem "jekyll-feed"
+gem "jekyll-paginate"
+gem "jekyll-seo-tag"
+gem "jekyll-sitemap"
+gem "jekyll-tagging"
+gem "jemoji"

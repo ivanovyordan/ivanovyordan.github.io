@@ -1,28 +1,23 @@
 ---
-title: Home
 layout: default
-pagination:
-  enabled: true
-description: My personal blog homepage
 ---
+
+{% include hero.html %}
+
 <div class="container">
-  {% if page.url == '/' %}
-    <div class="row mb-4">
-      {% include index/featured-posts.html %}
-    </div>
-  {% endif %}
-
   <div class="row">
-    <section>
-      <h2><span>All stories</span></h2>
-
-      <div class="row">
-        {% for post in paginator.posts %}
-          {% include index/post.html post=post %}
-        {% endfor %}
+    <div class="col col-12">
+      <div class="contaniner__inner animate">
+        <div class="row">
+          {% if site.posts.size > 0 %}
+            {% for post in paginator.posts %}
+              {% include article-content.html %}
+            {% endfor %}
+          {% endif %}
+        </div>
       </div>
-    </section>
+    </div>
   </div>
 </div>
 
-{% include index/pagination.html %}
+{% include pagination.html %}

@@ -1,28 +1,44 @@
 ---
+layout: page
 title: Contact
 permalink: /contact/
-lang: en-US
 ---
-<form action="https://formspree.io/f/xknpkwbj" method="POST">
-  <input type="hidden" name="_language" value="en">
 
-  <p class="mb-4">Please send your message to me. I will reply as soon as possible!</p>
+<div class="form-box">
+  <div class="contact-head">
+    <p class="page-description">
+        Here’s my offer to you in case there’s no pandemic out there.
+    </p>
 
-  <div class="form-group row">
-    <div class="col-md-6">
-      <input class="form-control" type="text" name="name" placeholder="Name*" required>
-    </div>
+    <p class="page-description">
+        If you are going to be anywhere near where I live, where I work or where I might be at some point, and want to talk about technology or data or startups or anything really, I’d love to buy you a coffee and have a chat.
+    </p>
 
-    <div class="col-md-6">
-      <input class="form-control" type="email" name="_replyto" placeholder="E-mail Address*" required>
-    </div>
+    <p class="page-description">
+        I live in a small village near Plovdiv, Bulgaria, but you can find me at
+        a number of conferences I attend or organize in Bulgaria. I also
+        exist online at
+        <a href="https://twitter.com/ivanov_yordan">Twitter</a>,
+        <a href="https://github.com/ivanovyordan">GitHub</a> and
+        <a href="https://www.linkedin.com/in/ivanovyordan/">LinkedIn</a>. 
+        The best way to get my attention, though is to drop me an email.
+    </p>
   </div>
-
-  <textarea rows="8" class="form-control mb-3" name="message" placeholder="Message*" required></textarea>
-
-  <input class="btn btn-success" type="submit" value="Send">
-
-  <div style="position: absolute; left: -5000px;" aria-hidden="true">
-    <input type="text" name="_gotcha" class="invisible">
-  </div>
-</form>
+  <form class="form" action="{% if site.contact.id %}https://formspree.io/f/{{site.contact.id}}{% else %}#{% endif %}" method="POST">
+    <div class="form__group">
+      <label class="form__label screen-reader-text" for="form-name">Your Name</label>
+      <input class="form__input" id="form-name" type="text" name="name" placeholder="Name..." required>
+    </div>
+    <div class="form__group">
+      <label class="form__label screen-reader-text" for="form-email">Your Email</label>
+      <input class="form__input" id="form-email" type="email" name="_replyto" placeholder="Email..." required>
+    </div>
+    <div class="form__group">
+      <label class="form__label screen-reader-text" for="form-text">Your Message</label>
+      <textarea class="form__input" id="form-text" name="text" rows="10" placeholder="Message..." required></textarea>
+    </div>
+    <div class="form__group">
+      <button class="button" type="submit">Send Message</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,16 @@
+---
+layout: none
+---
+[
+  {% for post in site.posts %}
+    {% capture template %} {% include json_search.html %} {% endcapture %}
+    {
+        "title": {{ post.title | jsonify }},
+        "url": {{ post.url | absolute_url | jsonify }},
+        "tags": {{ post.tags | array_to_sentence_string | jsonify }},
+        "date": {{ post.date | jsonify }},
+        "content": {{ post.content | strip_html | jsonify }},
+        "article": {{ template | jsonify }}
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

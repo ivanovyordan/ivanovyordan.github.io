@@ -1,69 +1,94 @@
-# Site
+#-------------------------------
+# General Site Settings
 title: Yordan Ivanov
-description: My personal blog
-logo: assets/images/logo.png
-favicon: assets/images/favicon.ico
-url: https://www.ivanovyordan.com
-baseurl:
-disqus: ivanovyordan
-email: mail@ivanovyordan.com
-mailchimp_list: https://ivanovyordan.us20.list-manage.com/subscribe/post?u=e0b56c32fb49aebd4080fb753&amp;id=e5c9c71c74
-followit_url: https://follow.it/ivanovyordan
+logo: "/images/global/logo.svg"
+description: "/usr/bin/blog"
+baseurl: ""
+url: "https://www.ivanovyordan.com"
+blog-theme: "dark"
 
-include: ['_pages', '.well-known']
-permalink: /:year/:month/:day/:title/
 
-# Plugins
+#-------------------------------
+# Author Settings
+author:
+  name: "Yordan Ivanov"
+  image: "/images/global/yordan.jpeg"
+
+
+#-------------------------------
+# Hero Settings
+hero:
+  hero__title: Hi, I'm <span class="hero__name">Yordan Ivanov</span>.
+  hero__job: Data person
+  hero__description: I spend a lot of time working with data
+  hero__button__text: Read about my past
+  hero__button__link: "/about"
+  hero__image: "/images/global/yordan.jpeg"
+
+
+#-------------------------------
+# Newsletter (_includes/footer-widgets/widget-subscribe.html)
+mailchimp__title: Subscribe to new posts
+mailchimp__text: Subscribe to our newsletter and I’ll send you the emails of latest posts.
+mailchimp__identifier: "https://ivanovyordan.us14.list-manage.com/subscribe/post?u=9c76b78cda3061f12a1952b93&amp;id=38b342aaba"
+mailchimp__button__text: Subscribe
+
+
+#-------------------------------
+# Contact Settings
+contact:
+  id: xknpkwbj
+
+#-------------------------------
+# Social Links (Footer)
+# Other icons can be found at https://ionicons.com/v4/
+social:
+- {icon: "ion-logo-twitter", link: "https://twitter.com/ivanov_yordan"}
+- {icon: "ion-logo-github", link: "https://github.com/ivanovyordan"}
+- {icon: "ion-logo-linkedin", link: "https://linkedin.com/in/ivanovyordan"}
+- {icon: "ion-logo-rss", link: "https://www.ivanovyordan.dev/feed.xml"}
+
+
+#-------------------------------
+# Comment Section (Disqus)
+disqus-identifier: ivanovyordan
+
+
+#-------------------------------
+# Google Analytics
+google-analytics: G-NQVXLYQ7LZ
+
+
+#-------------------------------
+# Build Settings
+markdown: kramdown
+permalink: /:title
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
-  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll/tagging
   - jemoji
 
-author:
-    name: Yordan Ivanov
-    site: https://www.ivanovyordan.com
-    avatar: assets/images/yordan.jpg
-    email: mail@ivanovyordan.com
-    twitter: ivanov_yordan
-    github: ivanovyordan
-    linkedin: ivanovyordan
+paginate: 9
+paginate_path: "/page/:num"
 
-twitter:
-  username: ivanovyordan
-  card: summary
-
-# Defaults
+# Pages Path
 defaults:
-  # all posts
   - scope:
-      path: _posts
+      path: '_pages'
     values:
-      layout: post
+      permalink: /:basename:output_ext
 
-  # all pages
-  - scope:
-      path: _pages
-    values:
-      layout: page
+include:
+  - _pages
 
-# Syntax
-markdown: kramdown
-highlighter: rouge
-
-# Paginate
-paginate: 10
+# Tags
+tag_page_dir: tag
+tag_page_layout: tag_page
+tag_permalink_style: /:title
 
 sass:
-  sass_dir: assets/_sass
-
-# Exclude metadata and development time dependencies (like Grunt plugins)
-exclude:
-  - README.markdown
-  - package.json
-  - grunt.js
-  - Gruntfile.js
-  - Gruntfile.coffee
-  - node_modules
+  sass_dir: _sass
+  style: compressed

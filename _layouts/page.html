@@ -1,14 +1,17 @@
 ---
 layout: default
 ---
+
+{% include hero.html %}
+
+<!-- begin page -->
 <div class="container">
-  <h1 class="font-weight-bold spanborder"><span>{{page.title}}</span></h1>
+  <article class="page animate">
 
-  <div class="page-content">
-    {{ content }}
+    <div class="page__content">
+      {{ content }}
+    </div>
 
-    {% if page.comments == true %}
-      {% include comments.html %}
-    {% endif %}
-  </div>
+  </article>
 </div>
+<!-- end page -->
