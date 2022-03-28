@@ -30,7 +30,7 @@ hero:
 # Newsletter (_includes/footer-widgets/widget-subscribe.html)
 mailchimp__title: Subscribe to new posts
 mailchimp__text: Subscribe to our newsletter and I’ll send you the emails of latest posts.
-mailchimp__identifier: "https://ivanovyordan.us14.list-manage.com/subscribe/post?u=9c76b78cda3061f12a1952b93&amp;id=38b342aaba"
+mailchimp__identifier: "ivanovyordan.us14.list-manage.com/subscribe/post?u=9c76b78cda3061f12a1952b93&amp;id=38b342aaba"
 mailchimp__button__text: Subscribe
 
 
