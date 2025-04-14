@@ -1,0 +1,65 @@
+{{ define "main" }}
+<div class="hero">
+  <div class="container">
+    <h1>Hi, I'm Yordan Ivanov</h1>
+    <p class="lead">
+      Data enthusiast, educator, and course creator helping you master data
+      analysis and visualization.
+    </p>
+  </div>
+</div>
+
+<section class="lead-magnet">
+  <div class="container">
+    <div class="lead-magnet-content">
+      <div class="lead-magnet-text">
+        <h2>{{ .Site.Params.leadMagnetTitle }}</h2>
+        <p>{{ .Site.Params.leadMagnetDescription }}</p>
+        <ul class="benefits">
+          <li>✓ Step-by-step tutorials</li>
+          <li>✓ Real-world examples</li>
+          <li>✓ Best practices and tips</li>
+          <li>✓ Regular updates</li>
+        </ul>
+      </div>
+      <div class="lead-magnet-form">
+        <iframe
+          src="YOUR_KIT_FORM_URL"
+          width="100%"
+          height="400"
+          frameborder="0"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="container">
+    <h2>What You'll Learn</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>Data Analysis</h3>
+        <p>
+          Master the fundamentals of data analysis and interpretation with
+          practical examples and hands-on exercises.
+        </p>
+      </div>
+      <div class="feature-card">
+        <h3>Visualization</h3>
+        <p>
+          Create compelling data visualisations that tell a story and
+          effectively communicate insights to your audience.
+        </p>
+      </div>
+      <div class="feature-card">
+        <h3>Best Practices</h3>
+        <p>
+          Learn industry-standard practices and methodologies to ensure your
+          data work is accurate, efficient, and impactful.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
