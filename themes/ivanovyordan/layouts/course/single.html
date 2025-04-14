@@ -1,0 +1,99 @@
+{{ define "main" }}
+<div class="hero course-hero">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    <p class="lead">{{ .Description }}</p>
+  </div>
+</div>
+
+<section class="course-overview">
+  <div class="container">
+    <div class="course-grid">
+      <div class="course-content">
+        <h2>What You'll Learn</h2>
+        {{ .Content }}
+      </div>
+      <div class="course-cta">
+        <div class="pricing-card">
+          <div class="price">
+            <span class="currency">£</span>
+            <span class="amount">{{ .Params.price }}</span>
+          </div>
+          <ul class="features">
+            {{ range .Params.features }}
+            <li>✓ {{ . }}</li>
+            {{ end }}
+          </ul>
+          <a href="{{ .Params.checkout_url }}" class="button button-primary"
+            >Enrol Now</a
+          >
+          <p class="guarantee">30-day money-back guarantee</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="curriculum">
+  <div class="container">
+    <h2>Course Curriculum</h2>
+    <div class="module-grid">
+      {{ range .Params.modules }}
+      <div class="module-card">
+        <h3>{{ .title }}</h3>
+        <ul>
+          {{ range .lessons }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="container">
+    <h2>What Students Say</h2>
+    <div class="testimonial-grid">
+      {{ range .Params.testimonials }}
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <p>"{{ .quote }}"</p>
+        </div>
+        <div class="testimonial-author">
+          <div class="author-info">
+            <strong>{{ .name }}</strong>
+            <span>{{ .title }}</span>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-grid">
+      {{ range .Params.faqs }}
+      <div class="faq-item">
+        <h3>{{ .question }}</h3>
+        <p>{{ .answer }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container">
+    <h2>Ready to Transform Your Data Skills?</h2>
+    <p>Join hundreds of successful students and start your journey today.</p>
+    <a href="{{ .Params.checkout_url }}" class="button button-primary"
+      >Enrol Now</a
+    >
+  </div>
+</section>
+{{ end }}
