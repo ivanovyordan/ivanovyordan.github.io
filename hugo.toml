@@ -1,11 +1,8 @@
-baseURL = "https://ivanovyordan.com/"
+baseURL = "https://www.ivanovyordan.com/"
 languageCode = "en-gb"
 title = "Yordan Ivanov"
 theme = "ivanovyordan"
 
 [params]
-primaryColor = "#004080"
 description = "Personal website of Yordan Ivanov"
 author = "Yordan Ivanov"
-leadMagnetTitle = "Download Your Free PDF"
-leadMagnetDescription = "Get instant access to our exclusive PDF guide"

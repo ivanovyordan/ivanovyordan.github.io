@@ -1,10 +1,11 @@
 {{ define "main" }}
 <div class="hero">
   <div class="container">
-    <h1>Hi, I'm Yordan Ivanov</h1>
+    <h1>Master <u>Stakeholder Influence</u></h1>
     <p class="lead">
-      Data enthusiast, educator, and course creator helping you master data
-      analysis and visualization.
+      Start getting the <strong>recognition</strong>,
+      <strong>promotions</strong>, and
+      <strong>strategic seat at the table</strong> your work deserves.
     </p>
   </div>
 </div>
@@ -13,27 +14,30 @@
   <div class="container">
     <div class="lead-magnet-content">
       <div class="lead-magnet-text">
-        <h2>{{ .Site.Params.leadMagnetTitle }}</h2>
-        <p>{{ .Site.Params.leadMagnetDescription }}</p>
+        <h2>Free Guide: The Stakeholder Management Playbook</h2>
+        <p>Build trust, get buy-in, and boost adoption—without the burnout</p>
         <ul class="benefits">
-          <li>✓ Step-by-step tutorials</li>
-          <li>✓ Real-world examples</li>
+          <li>✓ Handle vague requests like a pro with ready-to-use scripts</li>
+          <li>✓ Say “no” (or “not yet”) without damaging relationships</li>
           <li>✓ Best practices and tips</li>
           <li>✓ Regular updates</li>
         </ul>
-      </div>
-      <div class="lead-magnet-form">
+
         <iframe
-          src="YOUR_KIT_FORM_URL"
-          width="100%"
-          height="400"
+          src="https://embeds.beehiiv.com/9bdf2f93-74da-4271-a108-9854ab36d1bd?slim=true"
+          data-test-id="beehiiv-embed"
           frameborder="0"
+          width="100%"
         ></iframe>
+      </div>
+      <div class="lead-magnet-preview">
+        <img src="/images/ebook-cover.png" />
       </div>
     </div>
   </div>
 </section>
 
+<!--
 <section class="features">
   <div class="container">
     <h2>What You'll Learn</h2>
@@ -62,4 +66,5 @@
     </div>
   </div>
 </section>
+-->
 {{ end }}

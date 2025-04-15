@@ -142,7 +142,7 @@ body {
 }
 
 .lead-magnet-text h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: calc(var(--spacing-unit) * 4);
   color: var(--primary-color);
   font-weight: 700;
@@ -152,6 +152,10 @@ body {
   font-size: 1.2rem;
   margin-bottom: calc(var(--spacing-unit) * 4);
   color: var(--gray);
+}
+
+.lead-magnet-preview > img {
+  width: 60%;
 }
 
 .benefits {
@@ -179,14 +183,6 @@ body {
 }
 .benefits li:nth-child(4) {
   animation-delay: 1.4s;
-}
-
-.lead-magnet-form {
-  background: white;
-  padding: calc(var(--spacing-unit) * 6);
-  border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 /* Features Section */
