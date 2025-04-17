@@ -1,7 +1,6 @@
 baseURL = "https://www.ivanovyordan.com/"
 languageCode = "en-gb"
 title = "Yordan Ivanov"
-theme = "ivanovyordan"
 
 [params]
 description = "Personal website of Yordan Ivanov"
