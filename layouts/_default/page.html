@@ -15,15 +15,17 @@
   </head>
   <body>
     <header class="site-header">
-      <nav class="container">
-        <a href="/" class="logo">{{ .Site.Title }}</a>
-        <div class="nav-links">
-          <a href="/">Home</a>
-          <a href="/course">Course</a>
-          <a href="https://datagibberish.com" target="_blank">Newsletter</a>
-          <a href="/about">About</a>
-        </div>
-      </nav>
+      <div class="container">
+        <nav>
+          <a href="/" class="logo">{{ .Site.Title }}</a>
+          <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/course">Course</a>
+            <a href="https://datagibberish.com" target="_blank">Newsletter</a>
+            <a href="/about">About</a>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main>{{ .Content }}</main>
