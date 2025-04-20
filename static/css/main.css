@@ -52,8 +52,18 @@ section:nth-child(even) {
 h2 {
   color: var(--primary-color);
   font-size: 2.5rem;
-  margin-bottom: calc(var(--spacing-unit) * 6);
+  margin: calc(var(--spacing-unit) * 6);
   text-align: center;
+}
+
+h3 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: calc(var(--spacing-unit) * 4);
+}
+
+h4 {
+  margin-top: calc(var(--spacing-unit) * 8);
 }
 
 p {
@@ -62,7 +72,6 @@ p {
 
 img {
   width: 100%;
-  height: auto;
   border-radius: 8px;
   object-fit: cover;
   box-shadow: 10px 10px 15px -6px var(--shadow-color);
@@ -74,9 +83,32 @@ img.no-shadow {
   box-shadow: none;
 }
 
+img.thin {
+  max-width: 600px;
+}
+
+img.extra-thin {
+  max-width: 400px;
+}
+
+img.circle {
+  border-radius: 50%;
+  max-width: 200px;
+}
+
 li {
   list-style: none;
   margin: calc(var(--spacing-unit) * 2) 0;
+}
+
+blockquote {
+  border-left: 4px solid var(--primary-color);
+  padding-left: calc(var(--spacing-unit) * 3);
+  margin: calc(var(--spacing-unit) * 4) 0;
+  font-style: italic;
+  background-color: var(--gray-light);
+  padding: calc(var(--spacing-unit) * 3);
+  border-radius: 4px;
 }
 
 /* Header */
@@ -149,11 +181,56 @@ li {
 .alert {
   background: var(--primary-color);
   color: white;
-  padding: calc(var(--spacing-unit) * 2) calc(var(--spacing-unit) * 4);
+  padding: calc(var(--spacing-unit) * 2) calc(var(--spacing-unit) * 2);
   border-radius: 8px;
-  margin-bottom: calc(var(--spacing-unit) * 6);
   font-weight: 600;
-  display: inline-block;
+}
+
+/* Countdown */
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.countdown-label {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #666;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+  .countdown-container {
+    gap: calc(var(--spacing-unit) * 2);
+  }
+
+  .countdown-item {
+    min-width: 70px;
+  }
+
+  .countdown-number {
+    font-size: 2.5rem;
+  }
+
+  .countdown-label {
+    font-size: 0.875rem;
+  }
 }
 
 .button {
@@ -267,12 +344,6 @@ li {
   box-shadow: 0 10px 30px rgba(0, 64, 128, 0.1);
 }
 
-.card h3 {
-  color: var(--primary-color);
-  font-size: 1.5rem;
-  margin-bottom: calc(var(--spacing-unit) * 3);
-}
-
 .card p {
   color: var(--accent-color);
   line-height: 1.6;
@@ -293,6 +364,12 @@ li {
   object-fit: cover;
   width: 100%;
   display: block;
+}
+
+/* Submit Email */
+.beehiiv-embed {
+  border: none;
+  width: 100%;
 }
 
 /* Responsive adjustments */
