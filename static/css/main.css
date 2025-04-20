@@ -70,6 +70,10 @@ img {
   margin: 0 auto;
 }
 
+img.no-shadow {
+  box-shadow: none;
+}
+
 li {
   list-style: none;
   margin: calc(var(--spacing-unit) * 2) 0;
