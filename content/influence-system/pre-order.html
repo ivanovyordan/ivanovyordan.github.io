@@ -15,9 +15,9 @@ scripts:
     </h1>
     <p>Stop being looped in too late. Start shaping strategy.</p>
     <img
-      src="/images/course-hero-placeholder.jpg"
+      src="/images/course-preview.jpg"
       alt="Data Leader Influence System"
-      class="hero-image"
+      class="hero-image no-shadow"
     />
   </div>
 </section>
@@ -163,15 +163,15 @@ scripts:
     <h2>Pre-Order Now<br>Early Adopters Get the Biggest Benefits</h2>
 
     <div>
-      <h4>Bonus 1 - $XX Value</h4>
+      <h4>Bonus 1 - $50 Value</h4>
       <h3>The Influence System Toolkit (Notion Operating System)</h3>
-      <img class="thin" src="/images/business-value-placeholder.jpg" alt="The Influence System Toolkit" />
+      <img class="thin" src="/images/notion-workspace.png" alt="The Influence System Toolkit" />
     </div>
 
     <div>
-      <h4>Bonus 2 - $XX Value</h4>
+      <h4>Bonus 2 - $40 Value</h4>
       <h3>How to Run a Strategic Stakeholder Kickoff (Mini-Course)</h3>
-      <img class="thin" src="/images/business-value-placeholder.jpg" alt="The Influence System Toolkit" />
+      <img class="thin no-shadow" src="/images/bonus-course-preview.jpg" alt="The Influence System Toolkit" />
     </div>
   </div>
 </section>
@@ -183,16 +183,9 @@ scripts:
     <h3>Discount price: <strong>Only $58</strong></h3>
     <p><strong>⏳ Price goes up on April 25th, 2025.</strong> Don't wait.</p>
 
-    {{ if lt time.Now "May 23, 2025 00:00:00"  }}
-      <p>Pre-orders start in a couple of days. Type your email if you want to be among the founding members.</p>
-      <iframe src="https://embeds.beehiiv.com/cd4f25a3-663e-4ebb-ab87-6bb1bea5146f?slim=true" data-test-id="beehiiv-embed" height="52" frameborder="0" scrolling="no" style="margin: 0; border-radius: 0px !important; background-color: transparent;"></iframe>
-    {{ else if lt time.Now "May 27, 2025 00:00:00" }}
-      <a href="https://courses.ivanovyordan.com/order?link=0s7Mn" class="button">Pre-Order Now for $58</a>
-    {{ else }}
-      <a href="https://courses.ivanovyordan.com/order?link=0s7Mn" class="button">Pre-Order Now for $97</a>
-    {{ end }}
+    <a href="https://courses.ivanovyordan.com/order?link=0s7Mn" class="button">Pre-Order Now for $58</a>
 
-    <h4>Important: $40% Pre-Order Discount Expires In...</h4>
+    <h4>Important: 40% Pre-Order Discount Expires In...</h4>
 
     <div class="countdown-container" id="countdown" data-target="April 26, 2025 00:00:00">
       <div class="countdown-item">
